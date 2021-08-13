@@ -1,23 +1,19 @@
 ---
-title: Hexo 博客搭建
+title: Hexo 博客搭建教程
 cover: /img/blog_img/hexo.png
-tags: ['博客搭建', 'hexo']
-categories: ['博客搭建']
+tags: ['个人博客', 'hexo']
+categories: ['个人博客']
 ---
-
-# 如何通过 hexo 工具搭建自己的博客网站
 
 ## 效果
 [博客首页](https://smiecj.github.io/)
 ![blog front page](hexo_blog_01.png)
 
-[博客标签页](https://smiecj.github.io/tags/)
-![blog tag page](hexo_blog_02.png)
-
+![blog front page](hexo_blog_12.png)
 
 ## 背景
 之前自己的博客都是放在csdn上，分类管理起来不是很方便，而且分类在左下角，不是特别显眼的地方
-![csdn page]](hexo_blog_03.png)
+![csdn page](hexo_blog_03.png)
 
 公众号的标签功能还可以，不过自己还是希望有个个人站点能专门管理写过的博客，主题最好是能一目了然，不仅仅是别人看着方便，以后自己整理资料的时候找得也方便
 
@@ -63,7 +59,8 @@ npm install -g hexo-cli
 hexo init myblog
 ```
 
->结构简述：
+>工程结构简述
+
 ![hexo structure](hexo_blog_04.png)
 
 ```
@@ -121,25 +118,27 @@ hexo server -w -p 3000
 ## 基本配置的介绍
 这里我们对一些博客配置做简单的了解，方便后续进行主题设置。当然博客部署完成之后，也可以直接部署到github 上，先不管这些配置。你也可以直接跳到下一节内容进行参考。
 如果想了解大部分的配置，建议参考下面的官方教程
-[参考-官方教程](https://butterfly.js.org/posts/4aa8abbe/#Button)
+[参考-官方教程](https://butterfly.js.org/posts/4aa8abbe)
 
 ### 网站信息
-站点基本配置:
-![hexo structure](hexo_blog_06.png)
+站点基本配置
 
-头像和首页背景图:
-![hexo structure](hexo_blog_07.png)
+![blog config](hexo_blog_06.png)
+
+头像和首页背景图
+
+![head config](hexo_blog_07.png)
 
 ### 文章
 文章封面: 设置cover属性
-![hexo structure](hexo_blog_08.png)
+![blog top img config](hexo_blog_08.png)
 
 效果:
-![hexo structure](hexo_blog_09.png)
+![blog top img show](hexo_blog_09.png)
 
 
 ### 顶部栏
-![hexo structure](hexo_blog_10.png)
+![blog top config](hexo_blog_10.png)
 
 其中，标签、分类页面可通过下面的指令新建:
 ```
@@ -151,7 +150,7 @@ hexo new page categories
 
 ### github 创建仓库
 github 能够识别 用户名.github.io 的仓库名，并部署这个仓库的静态文件生成站点，站点地址就是 用户名.github.io
-![hexo structure](hexo_blog_11.png)
+![blog deploy config](hexo_blog_11.png)
 
 ### 配置准备
 修改博客根目录的 config.yml 文件:
