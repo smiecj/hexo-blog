@@ -6,7 +6,7 @@
 title: Smiecj的小窝
 subtitle: 'tech make life better'
 description: '写写生活，做做笔记，聊聊日常'
-keywords: life,note
+keywords: life
 author: smiecj
 language: zh-CN
 timezone: 'Asia/ShangHai'
@@ -42,6 +42,9 @@ external_link:
 filename_case: 0
 render_drafts: false
 post_asset_folder: true
+marked:
+  prependRoot: true
+  postAsset: true
 relative_link: false
 future: true
 highlight:

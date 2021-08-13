@@ -9,10 +9,10 @@ categories: ['博客搭建']
 
 ## 效果
 [博客首页](https://smiecj.github.io/)
-![blog front page]](hexo_blog_01.png)
+![blog front page](hexo_blog_01.png)
 
 [博客标签页](https://smiecj.github.io/tags/)
-![blog tag page]](/hexo/hexo_blog_02.png)
+![blog tag page](hexo_blog_02.png)
 
 
 ## 背景
