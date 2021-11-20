@@ -100,7 +100,7 @@ class Execute(Resource):
 ## 问题解决
 修改gateway 启动脚本，将 stdout 和 stderr 都重定向到日志文件即可
 
-**nohup ./nebula-http-gateway >> /var/log/nebula/gateway.log &**
+nohup ./nebula-http-gateway **> /var/log/nebula/gateway.log 2>&1** &
 
 再次操作 nebula studio，看到 gateway 打印的日志能正常在 nohup.out 中打印了
 
