@@ -2,7 +2,7 @@
 title: Hexo 博客搭建教程
 cover: /img/blog_img/hexo.png
 tags: ['个人博客', 'hexo']
-categories: ['个人博客']
+categories: ['个人博客', '工具使用']
 ---
 
 ## 效果
