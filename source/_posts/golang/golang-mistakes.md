@@ -4,6 +4,8 @@ sticky: 1
 cover: /img/blog_img/golang-1200x675.png
 tags: ['golang']
 categories: ['golang']
+date: 2021-7-18
+updated: 2021-7-18
 ---
 
 [原文链接](https://itnext.io/the-top-10-most-common-mistakes-ive-seen-in-go-projects-4b79d4f6cd65#e9ba)

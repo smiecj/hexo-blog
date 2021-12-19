@@ -3,6 +3,8 @@ title: Hexo 博客搭建教程
 cover: /img/blog_img/hexo.png
 tags: ['个人博客', 'hexo']
 categories: ['个人博客', '工具使用']
+date: 2021-8-13
+updated: 2021-8-13
 ---
 
 ## 效果
