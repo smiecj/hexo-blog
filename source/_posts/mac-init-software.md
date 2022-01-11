@@ -78,17 +78,41 @@ bartender 就是不错的状态栏管理工具
 ### zsh
 zsh 本身不是 shell，它只是在终端基础上套了个壳，相当于穿了件外套，你可以换不同样式的外套，也可以给衣服加口袋
 
-虽然 mac 本身使用的是 zsh，但是版本可能比较旧，建议更新到最新版
+而其中 oh-my-zsh 又是扩展功能实现相对比较多的版本。虽然 mac 本身使用的是 zsh，但是版本可能比较旧，还是建议更新 
+
+```
+# 安装 zsh
+brew install zsh
+
+# 安装 oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+# 查看当前终端使用的shell
+echo $SHELL
+
+# 如果不是 zsh，修改成 zsh
+sudo echo "$(which zsh)" >> /etc/shells
+chsh -s $(which zsh)
+```
 
 配置插件
 ```
 # vim ~/.zshrc
-plugins=(git osx autojump zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(git osx zsh-autosuggestions zsh-syntax-highlighting)
 
 # 自动提示插件
-git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
 # 语法高亮插件
-git clone git://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
+```
+
+配置主题（根据需要配置，也可以设置其他主题）
+```
+# 下载
+git clone --depth=1 https://gitee.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
+# 配置: vim ~/.zshrc
+ZSH_THEME="powerlevel10k/powerlevel10k"
 ```
 
 [参考-Mac 环境安装并配置终端神器 oh-my-zsh](https://a1049145827.github.io/2019/05/15/Mac-%E7%8E%AF%E5%A2%83%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AE%E7%BB%88%E7%AB%AF%E7%A5%9E%E5%99%A8-oh-my-zsh/)
@@ -153,6 +177,11 @@ sudo chmod 777 /usr/local/bin/iterm2-*
 
 ![iterm config](iterm02.png)
 
+```
+Regular expression      Action  Parameters
+\*\*B0100       Run Silent Coprocess    /usr/local/bin/iterm2-send-zmodem.sh
+\*\*B00000000000000     Run Silent Coprocess    /usr/local/bin/iterm2-recv-zmodem.sh
+```
 
 ### lrzsz
 
@@ -171,7 +200,7 @@ Docker 对于开发者的重要性我在前面[公众号文章](https://mp.weixi
 
 [官网下载](https://www.docker.com/products/docker-desktop)
 
-mac 电脑建议根据，比如如果在 M1 版本上运行 X86 的镜像，可能会有一些软件不兼容的情况
+mac 电脑建议根据本身芯片架构选择匹配的版本，比如如果在 M1 版本上安装 X86 的 docker desktop，虽然镜像能跑，但是能耗可能会比较高
 这边我还整理了开发镜像的制作方式，[参考博客](https://smiecj.github.io/2021/12/18/dockerfile-centos-dev/)，可一键搭建包含 java、go 等语言的开发镜像
 
 ### Conda
@@ -183,6 +212,13 @@ mac 电脑建议根据，比如如果在 M1 版本上运行 X86 的镜像，可�
 
 ```
 sh /Users/username/Downloads/Miniconda3-latest-MacOSX-arm64.sh
+```
+
+安装完成后在环境变量中配置 conda 路径
+```
+# vim ~/.zshrc
+export CONDA_HOME=/Users/username/miniconda
+export PATH=$PATH:$CONDA_HOME/bin
 ```
 
 ## 性能测试
@@ -202,6 +238,6 @@ brew install glances
 
 ### Speed Test
 
-磁盘速度测试，在 app store 上直接搜索: blackmagic-disk-speed-test
+磁盘速度测试工具，在 app store 上直接搜索: blackmagic disk speed test 即可
 
 ![speed test](speedtest.png)
