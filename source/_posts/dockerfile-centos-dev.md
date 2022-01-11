@@ -1,8 +1,10 @@
 ---
 title: 通过 DockerFile 搭建开发镜像
+sticky: 1
+description: 一键搭建开发镜像，从此告别繁琐的各种开发环境的安装过程
 cover: https://iamondemand.com/wp-content/uploads/2015/04/cool-docker-image.jpg
 tags: ['docker', '开发工具']
-categories: ['docker']
+categories: ['开发工具', 'docker']
 date: 2021-12-19
 updated: 2021-12-19
 ---

@@ -1,9 +1,10 @@
 ---
 title: Golang 常见的10种错误
+description: 都是干货
 sticky: 1
 cover: /img/blog_img/golang-1200x675.png
 tags: ['golang']
-categories: ['golang']
+categories: ['编程语言', 'golang']
 date: 2021-7-18
 updated: 2021-7-18
 ---

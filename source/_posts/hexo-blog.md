@@ -1,8 +1,9 @@
 ---
 title: Hexo 博客搭建教程
+description: 从0开始搭建个人博客
 cover: /img/blog_img/hexo.png
 tags: ['个人博客', 'hexo']
-categories: ['个人博客', '工具使用']
+categories: ['开发工具', 'hexo']
 date: 2021-8-13
 updated: 2021-8-13
 ---

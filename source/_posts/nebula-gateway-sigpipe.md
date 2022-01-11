@@ -1,8 +1,9 @@
 ---
 title: 通过 Ambari 启动 Nebula Gateway 一段时间后会自动退出的问题解决
+description: 一个开发过程遇到的小bug的解决
 cover: https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Crab_Nebula.jpg/2048px-Crab_Nebula.jpg
 tags: ['nebula', '大数据']
-categories: ['个人博客', '问题解决']
+categories: ['大数据', '问题解决']
 date: 2021-11-20
 updated: 2021-11-20
 ---
